@@ -1,0 +1,90 @@
+@charset = "UTF-8";
+
+/*-----------------------------------------------------
+	Apply style to all tags.
+	*{}
+*/
+* {
+	font-size: 12pt;
+}
+
+/*-----------------------------------------------------
+	1.Apply style to a tag that has specific attribute.
+		tag_name[attr_name = "value"]{}
+	2.Apply style to a tag that its attributes has 
+	specific value which can be seperated by a space.
+		tag_name[attr_name ~= "value"]{}
+	3.Apply style to a tag that its attibutes starts 
+	with a specific value(follow by a dash in html 
+	file).
+		tag_name[attr_name = "value"]{}
+			+<html>-----------------------------+
+			| <tag_name attr_name="value-1">	|
+			| <tag_name attr_name="value-2">	|
+			+-----------------------------------+
+	4.Apply to a tag that its attributes are reserved
+	words.
+		tag_name[attr_name ^= "mailto:"]{}
+	5.Apply to a tag that its attributes include a 
+	specific value.
+		tag_name[attr_name *= "value"]{}
+	6.Apply to a tag that its attributes ends with a 
+	specific value.
+		img[src $= ".png"]{}
+*/
+header, h6 { 
+	color :#0000FF;
+	font-family: Futura;
+	font-size: 20pt;
+	font-style: bold;
+}
+a{
+	font-family: Futura;
+	font-size: 14pt;
+}
+img[alt ~= "Google"]{
+	height: 17pt;
+	width: 17pt;
+}
+
+/*----------------------------------------------------
+	1.Apply style to classes.
+		.class_name {}
+	2.Apply style to an id.
+		#id_name {}
+*/
+.note {
+	font-family: times;
+}
+#reset {
+	color: #FF0000;
+}
+
+/*----------------------------------------------------
+	Manage styles regarding activities done on the 
+	website.
+*/
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+	color: #0000FF;
+}
+textarea:hover {
+	border-color: #0000FF;
+}
+
+/*----------------------------------------------------
+	Manage styles of child.
+		tag_name: nth-child(2){}
+		tag_name:first-child{}
+*/
+tr:nth-child(2), tr:nth-child(3){
+	text-align: center;
+}
+p::first-line{
+	font-family: courier;
+	font-size: 11pt;
+	font-style: italic;
+}
