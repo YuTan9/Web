@@ -59,6 +59,17 @@ img[alt ~= "Google"]{
 	height: 17pt;
 	width: 17pt;
 }
+table{
+	border:1px solid #000;
+	border-collapse: collapse;
+}
+th,td{
+	border:1px solid #000;
+}
+textarea{
+	border-radius: 10px;
+	box-shadow: 2px 2px  1px 1px gray;
+}
 
 /*----------------------------------------------------
 	1.Apply style to classes.
