@@ -1,6 +1,10 @@
 @charset = "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Kavivanar|Yatra+One');
-
+@media screen and (min-width: 500px) {
+	body{
+		background-color: #C0C0C0;
+	}
+}
 /*-----------------------------------------------------
 	Apply style to all tags.
 	*{}
@@ -46,6 +50,7 @@ header{
 a[href = "http://google.com"]{
 	font-family: Futura;
 	font-size: 14pt;
+	margin-left: 13px;
 }
 a[href="http://www.instagram.com"]{
 	font-family: 'Kavivanar', cursive;
@@ -55,9 +60,16 @@ a[href="http://www.twitter.com"]{
 	font-family: 'Yatra One', cursive;
 	font-size: 14pt;
 }
-img[alt ~= "Google"]{
-	height: 17pt;
-	width: 17pt;
+img[alt ~= "icon"]{
+	height: 20pt;
+	width: 20pt;
+}
+img[src = "./email.png"]{
+	position: fixed;
+	top:10px;
+	right:10px;
+	height: 45pt;
+	width: 45pt;
 }
 table{
 	border:1px solid #000;
@@ -80,8 +92,26 @@ textarea{
 .note {
 	font-family: "Times New Roman";
 }
+#news{
+	width: 100%;
+    max-width: 500px;
+}
 #reset {
 	color: #FF0000;
+}
+.footer{
+	background-color: #E6E6FA;
+	width: 350px;
+	padding: 2px;
+	margin: 0px;
+	position: relative;
+}
+#emailIcon{
+	position: absolute;
+	top:-5px;
+	left:-7px;
+	display: inline;
+	margin: 0px;
 }
 
 /*----------------------------------------------------
