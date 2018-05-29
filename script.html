@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html lang = "zh">
+		<head>
+		</head>
+		<body>
+			<script>
+				function Person(name, gender, age){
+					this.name=name;
+					this.gender=gender;
+					this.age=age;
+					this.intro = function(){
+						document.write("Hello, my name is "+this.name+" and I am "+this.age+" year(s) old.");
+					}
+				}
+				var Thomas = new Person("Thomas", "Male", 20);
+				(prompt("Do you want to hear an introduction from Thomas?(Y/N)", "")=="Y")? Thomas.intro(): document.write("<h1>Maybe next time!</h1>");
+				
+			</script>
+		</body>
+	</html>
