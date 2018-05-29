@@ -5,6 +5,10 @@
 		background-color: #C0C0C0;
 	}
 }
+@keyframes myanimation{
+	0%	{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
 /*-----------------------------------------------------
 	Apply style to all tags.
 	*{}
@@ -64,7 +68,7 @@ img[alt ~= "icon"]{
 	height: 20pt;
 	width: 20pt;
 }
-img[src = "./email.png"]{
+img[src = "icon/email.png"]{
 	position: fixed;
 	top:10px;
 	right:10px;
@@ -132,7 +136,15 @@ img:hover{
 	height:20pt;
 	width: 20pt;
 }
-
+table:hover{
+	animation-name:myanimation;
+	animation-duration:2s;
+	animation-function:linear;
+	animation-iteration-count:infinite;
+}
+table:active{
+	animation-play-state:paused;
+}
 /*----------------------------------------------------
 	Manage styles of child.
 		tag_name: nth-child(2){}
