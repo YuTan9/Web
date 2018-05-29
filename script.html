@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 	<html lang = "zh">
 		<head>
+			<meta charset="UTF-8">
+			<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$("table, th, td").css("border", "1px solid #000");
+					$("table").css("border-collapse", "collapse");
+					$("th").css("background-color", "#FCF")
+					$("tr:odd").css('background-color', '#CFF');
+					$("tr:even").css('background-color', '#FF9')
+				});
+			</script>
 		</head>
 		<body>
 			<script>
@@ -9,12 +20,45 @@
 					this.gender=gender;
 					this.age=age;
 					this.intro = function(){
-						document.write("Hello, my name is "+this.name+" and I am "+this.age+" year(s) old.");
+						alert("Hello, my name is "+this.name+" and I am "+this.age+" year(s) old.");
 					}
 				}
 				var Thomas = new Person("Thomas", "Male", 20);
-				(prompt("Do you want to hear an introduction from Thomas?(Y/N)", "")=="Y")? Thomas.intro(): document.write("<h1>Maybe next time!</h1>");
-				
+				(prompt("Do you want to hear an introduction from Thomas?(Y/N)", "Y")=="Y")? Thomas.intro(): alert("Maybe next time!");
 			</script>
+			<table>
+				<tr>
+					<th>Seat No.</th>
+					<th>Name</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Thomas</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Mary</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>John</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Joe</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Sue</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Rick</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Eason</td>
+				</tr>
+			</table>
 		</body>
 	</html>
