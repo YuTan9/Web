@@ -5,16 +5,20 @@
 			<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 			<script>
 				$(document).ready(function(){
-					$("table, th, td").css("border", "1px solid #000");
+					$("th, td").css("border", "1px solid #000");
 					$("table").css("border-collapse", "collapse");
-					$("th").css("background-color", "#FCF")
+					$("th").css("background-color", "#FCF");
 					$("tr:odd").css('background-color', '#CFF');
-					$("tr:even").css('background-color', '#FF9')
+					$("tr:even").css('background-color', '#FF9');
+					$('table').before('<p font-size="13pt">Click on the names to hear their introduction!</p>');
+					$('td').click(function(){
+						eval(myReplace($(this).text()));
+					});
+					$('p').click(function(){
+						$(this).attr('font-size', '20pt');
+						alert($(this).attr('font-size'));
+					});
 				});
-			</script>
-		</head>
-		<body>
-			<script>
 				function Person(name, gender, age){
 					this.name=name;
 					this.gender=gender;
@@ -22,8 +26,19 @@
 					this.intro = function(){
 						alert("Hello, my name is "+this.name+" and I am "+this.age+" year(s) old.");
 					}
+					this.showName = function(){
+						document.write(this.name);
+					}
 				}
-				var Thomas = new Person("Thomas", "Male", 20);
+				function myReplace(s){
+					return s.slice(0, s.search("showName")).concat("intro()");
+				}
+			</script>
+		</head>
+		<body>
+			<script>
+				var Thomas = new Person("Thomas", "Male", 20),  Mary = new Person("Mary", "Female", 18), John = new Person("John", "Male", 34), Joe = new Person("Joe", "Male", 67), Sue = new Person("Sue", "Female", 35), Rick = new Person("Rick", "Male", 19), Eason = new Person("Eason", "Male", 40);
+
 				(prompt("Do you want to hear an introduction from Thomas?(Y/N)", "Y")=="Y")? Thomas.intro(): alert("Maybe next time!");
 			</script>
 			<table>
@@ -33,31 +48,31 @@
 				</tr>
 				<tr>
 					<td>1</td>
-					<td>Thomas</td>
+					<td><script type="text/javascript">Thomas.showName();</script></td>
 				</tr>
 				<tr>
 					<td>2</td>
-					<td>Mary</td>
+					<td><script type="text/javascript">Mary.showName();</script></td>
 				</tr>
 				<tr>
 					<td>3</td>
-					<td>John</td>
+					<td><script type="text/javascript">John.showName();</script></td>
 				</tr>
 				<tr>
 					<td>4</td>
-					<td>Joe</td>
+					<td><script type="text/javascript">Joe.showName();</script></td>
 				</tr>
 				<tr>
 					<td>5</td>
-					<td>Sue</td>
+					<td><script type="text/javascript">Sue.showName();</script></td>
 				</tr>
 				<tr>
 					<td>6</td>
-					<td>Rick</td>
+					<td><script type="text/javascript">Rick.showName();</script></td>
 				</tr>
 				<tr>
 					<td>7</td>
-					<td>Eason</td>
+					<td><script type="text/javascript">Eason.showName();</script></td>
 				</tr>
 			</table>
 		</body>
