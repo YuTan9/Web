@@ -16,15 +16,24 @@
 	</head>
 	<body>
 		<div data-role="page" id = "page1">
+		<div data-role = "panel" data-display="reveal" id = "panel">
+			<h3>Reveal</h3>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
 			<div data-role = "header" data-position="fixed">
-				<h1>Yu-Tan9's app</h1>
-			</div>
-			<div data-role = "navbar">
-				<ul>
-					<li><a href="#page1" data-transition="slide">Theme a</a></li>
-					<li><a href="#page2" data-transition="slide">Theme b</a></li>
-					<li><a href="#page3"data-transition="slide">Theme c</a></li>
-				</ul>
+				<span style = "position: absolute; top:10%; left:1%;"><a href="#panel"><img src="../icon/sidemenu.png" style="width:22pt; height:22pt;"></a></span>
+				<h1><a href="#dialog"  data-transition = "slidedown" style="text-decoration: none;">Yu-Tan9's app</a></h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" data-transition="slide" data-direction = "reverse">Theme a</a></li>
+						<li><a href="#page2" data-transition="slide">Theme b</a></li>
+						<li><a href="#page3"data-transition="slide">Theme c</a></li>
+					</ul>
+				</div>
 			</div>
 			<div data-role = "content">
 				<h3>
@@ -56,22 +65,31 @@
 					Now, his mascot activities have earned him the nickname "Sideshow Rob." To open this NBA season he had a pair of custom made "Sideshow Robs" basketball kicks made that he shared with his Twitter audience.
 				</p>
 			</div>
-			<div data-role = "footer" style="position: absolute; bottom: 0; width: 100%;">
+			<div data-role = "footer">
 				<p>
 					Check out <a href="http://github.com/YuTan9" style = "text-decoration: none;" data-ajax="false">my</a> github!
 				</p>
 			</div>
 		</div>
 		<div data-role="page" id = "page2" data-theme = "b">
-			<div data-role = "header" data-position="fixed">
-				<h1>Yu-Tan9's app</h1>
-			</div>
-			<div data-role = "navbar">
+			<div data-role = "panel" data-display="overlay" id = "panel">
+				<h3>Overlay</h3>
 				<ul>
-					<li><a href="#page1" data-transition="slide" data-direction = "reverse">Theme a</a></li>
-					<li><a href="#page2" data-transition="slide">Theme b</a></li>
-					<li><a href="#page3"data-transition="slide">Theme c</a></li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
 				</ul>
+			</div>
+			<div data-role = "header" data-position="fixed">
+				<span style = "position: absolute; top:10%; left:1%;"><a href="#panel"><img src="../icon/white-menu-icon.png" style="width:22pt; height:22pt;"></a></span>
+				<h1><a href="#dialog" data-transition = "slidedown" style="text-decoration: none;">Yu-Tan9's app</a></h1>
+				<div data-role = "navbar">
+					<ul>
+						<li><a href="#page1" data-transition="slide" data-direction = "reverse">Theme a</a></li>
+						<li><a href="#page2" data-transition="slide">Theme b</a></li>
+						<li><a href="#page3"data-transition="slide">Theme c</a></li>
+					</ul>
+				</div>
 			</div>
 			<div data-role = "content">
 				<h3>
@@ -110,15 +128,24 @@
 			</div>
 		</div>
 		<div data-role="page" id = "page3" data-theme = "c">
-			<div data-role = "header" data-position = "fixed">
-				<h1>Yu-Tan9's app</h1>
-			</div>
-			<div data-role = "navbar">
+			<div data-role = "panel" data-display="push" id = "panel">
+				<h3>Push</h3>
 				<ul>
-					<li><a href="#page1" data-transition="slide">Theme a</a></li>
-					<li><a href="#page2" data-transition="slide" data-direction = "reverse">Theme b</a></li>
-					<li><a href="#page3"data-transition="slide" data-direction = "reverse">Theme c</a></li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
 				</ul>
+			</div>
+			<div data-role = "header">
+				<span style = "position: absolute; top:10%; left:1%;"><a href="#panel"><img src="../icon/sidemenu.png" style="width:22pt; height:22pt;"></a></span>
+				<h1><a href="#dialog" data-transition = "slidedown" style="text-decoration: none;">Yu-Tan9's app</a></h1>
+				<div data-role = "navbar">
+					<ul>
+						<li><a href="#page1" data-transition="slide" data-direction = "reverse">Theme a</a></li>
+						<li><a href="#page2" data-transition="slide" data-direction = "reverse">Theme b</a></li>
+						<li><a href="#page3"data-transition="slide">Theme c</a></li>
+					</ul>
+				</div>
 			</div>
 			<div data-role = "content">
 				<h3>
@@ -155,6 +182,13 @@
 					Visit <a href="http://github.com/YuTan9" style = "text-decoration: none;" data-ajax="false">my</a> github!
 				</p>
 			</div>
+		</div>
+		<div id = "dialog" data-role="dialog" data-close-btn="right">
+			<div data-role="header"><h1>Yu-Tan9's app</h1></div>
+			<div data-role = "content">
+				<p>This is his first mobile app.</p>
+			</div>
+			
 		</div>
 	</body>
 </html>
