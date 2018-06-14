@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "zh">
+	<head>
+		<meta charset="UTF-8">
+		<!--Let the browser know the width and height on the clients' perspective-->
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+		<!--Import jQuery Mobile and jQuery from CDN-->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<!--Import jQuery mobile app css file with CDN-->
+		<link rel="stylesheet" href="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+
+		<!--Import Bootstrap from CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<title>Yu-Tan9's first Bootstrap</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">		
+		    	<ul class="nav navbar-nav">
+		    		<li><a href="Homepage.html">Ray Allen</a></li>
+					<li><a href="Manu.html">Manu Ginobili</a></li>
+					<li class = "active"><a href="#">Tim Duncan</a></li>
+		    	</ul>
+			    <ul class="nav navbar-nav navbar-right">
+			    	<li><a href="mailto:s110095@shsh.tw"><span class="glyphicon glyphicon-envelope"></span></a></li>
+			    	<li><a href="http://github.com/YuTan9"><span class="glyphicon glyphicon-user"></span></a></li>
+			    </ul>
+	  		</div>
+		</nav>
+		<div class = "container">
+			<img src="../icon/duncan.jpg" class = "img-rounded img-responsive" alt="Tim Duncan">
+			<div class = "page-header">
+				<h1>Tim Duncan</h1>
+			</div>
+			<h6>From Wikipedia, the free encyclopedia</h6>
+			<p>Timothy Theodore Duncan (born April 25, 1976)[1] is an American retired professional basketball player. He played his entire 19-year career with the San Antonio Spurs of the National Basketball Association (NBA). Widely considered to be the greatest power forward of all time,[2] he is a five-time NBA champion, two-time NBA MVP, three-time NBA Finals MVP, and an NBA All-Star Game MVP. He is also a 15-time NBA All-Star[3] and the only player to be selected to both the All-NBA and All-Defensive Teams for 13 consecutive seasons.[4] Many refer to Duncan as the greatest Spurs player of all time.
+			</p>
+
+			<h4>Career stats<br><small>This is a Bootstrap styled table</small></h4>
+			<table class = "table table-responsive">
+				<tr>
+					<th>Games</th>
+					<th>Field Goals</th>
+					<th>Field Goal Percentage</th>
+					<th>Blocks</th>
+					<th>Rebounds</th>
+					<th>Assists</th>
+					<th>Points</th>
+				</tr>
+				<tr>
+					<td>1392</td>
+					<td>10285</td>
+					<td>.506</td>
+					<td>3020</td>
+					<td>15091</td>
+					<td>4225</td>
+					<td>26496</td>
+				</tr>
+			</table>
+			<div class = "btn-group btn-group-justified">
+				<a href="https://facebook.com/" class = "btn btn-default"><span class="social social-facebook"></span>Facebook</a>
+				<a href="https://www.instagram.com/" class = "btn btn-default"><span class="social social-instagram"></span>Instagram</a>
+				<a href="https://twitter.com/" class = "btn btn-default"><span class="social social-twitter"></span>Twitter</a>
+			</div>
+		</div> <!--End of container-->
+
+	</body>
+</html>

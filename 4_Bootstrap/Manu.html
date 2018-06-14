@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "zh">
+	<head>
+		<meta charset="UTF-8">
+		<!--Let the browser know the width and height on the clients' perspective-->
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+		<!--Import jQuery Mobile and jQuery from CDN-->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<!--Import jQuery mobile app css file with CDN-->
+		<link rel="stylesheet" href="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+
+		<!--Import Bootstrap from CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<title>Yu-Tan9's first Bootstrap</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">		
+		    	<ul class="nav navbar-nav">
+		    		<li><a href="Homepage.html">Ray Allen</a></li>
+					<li class = "active"><a href="#">Manu Ginobili</a></li>
+					<li><a href="Tim.html">Tim Duncan</a></li>
+		    	</ul>
+			    <ul class="nav navbar-nav navbar-right">
+			    	<li><a href="mailto:s110095@shsh.tw"><span class="glyphicon glyphicon-envelope"></span></a></li>
+			    	<li><a href="http://github.com/YuTan9"><span class="glyphicon glyphicon-user"></span></a></li>
+			    </ul>
+	  		</div>
+		</nav>
+		<div class = "container">
+			<img src="../icon/manu.jpg" class = "img-rounded img-responsive" alt="Manu Ginóbili">
+			<div class = "page-header">
+				<h1>Manu Ginóbili</h1>
+			</div>
+			<h6>From Wikipedia, the free encyclopedia</h6>
+			<p>Emanuel David "Manu" Ginóbili (Spanish pronunciation: [maˈnu xinoˈβili]; born 28 July 1977) is an Argentine professional basketball player for the San Antonio Spurs of the National Basketball Association (NBA). A four-time NBA champion, Ginóbili was a member of the Spurs' 'Big Three' with Tim Duncan and Tony Parker from his debut in the NBA in 2002, to Duncan's retirement in 2016. He is one of only two players, along with Bill Bradley, to have won a EuroLeague title, an NBA championship, and an Olympic gold medal.[1]</p>
+
+			<h4>Career stats<small>(until 2017-2018 season)</small><br><small>This is a Bootstrap styled table</small></h4>
+			<table class = "table table-responsive">
+				<tr>
+					<th>Games</th>
+					<th>Field Goals</th>
+					<th>Field Goal Percentage</th>
+					<th>Rebounds</th>
+					<th>Assists</th>
+					<th>Points</th>
+				</tr>
+				<tr>
+					<td>1057</td>
+					<td>4584</td>
+					<td>.447</td>
+					<td>3697</td>
+					<td>4001</td>
+					<td>14043</td>
+				</tr>
+			</table>
+			<div class = "btn-group btn-group-justified">
+				<a href="https://www.facebook.com/ManuGinobili" class = "btn btn-default"><span class="social social-facebook"></span>Facebook</a>
+				<a href="https://www.instagram.com/manuginobili" class = "btn btn-default"><span class="social social-instagram"></span>Instagram</a>
+				<a href="https://twitter.com/manuginobili" class = "btn btn-default"><span class="social social-twitter"></span>Twitter</a>
+			</div>
+		</div> <!--End of container-->
+
+	</body>
+</html>
